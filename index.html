@@ -1,39 +1,31 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FocusBoard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>FocusBoard</h1>
-    <nav>
-      <button onclick="showSection('goals')">🎯 Ziele</button>
-      <button onclick="showSection('habits')">📅 Gewohnheiten</button>
-      <button onclick="showSection('quotes')">💬 Zitate</button>
-    </nav>
+    <h1>Willkommen bei FocusBoard</h1>
+    <p>Dein persönliches Tool für Fokus und Klarheit</p>
   </header>
 
   <main>
-    <section id="goals" class="content">
-      <h2>🎯 Ziele</h2>
-      <div id="goalList"></div>
-      <button onclick="addGoal()">+ Ziel hinzufügen</button>
-    </section>
+    <h2>Was ist FocusBoard?</h2>
+    <p>FocusBoard hilft dir, deine Gedanken zu ordnen, Prioritäten zu setzen und produktiv zu bleiben – ganz ohne Ablenkung.</p>
 
-    <section id="habits" class="content" style="display:none;">
-      <h2>📅 Gewohnheiten</h2>
-      <div id="habitList"></div>
-      <button onclick="addHabit()">+ Gewohnheit hinzufügen</button>
-    </section>
+    <h3>Features:</h3>
+    <ul>
+      <li>📝 Aufgaben verwalten</li>
+      <li>📌 Ziele setzen</li>
+      <li>⏳ Fokus-Timer</li>
+    </ul>
 
-    <section id="quotes" class="content" style="display:none;">
-      <h2>💬 Zitate</h2>
-      <p id="quoteText">Zitat wird geladen...</p>
-      <button onclick="newQuote()">Neues Zitat</button>
-    </section>
+    <button onclick="startFocusSession()">Loslegen</button>
   </main>
 
   <script src="script.js"></script>
